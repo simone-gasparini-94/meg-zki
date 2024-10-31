@@ -19,14 +19,18 @@
 
 @font-face {
     font-family: "Tiempos Headline";
-    src: url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.otf") format("opentype");
+    src: 
+        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff2") format("woff2"),
+        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Tiempos Headline";
-    src: url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.otf") format("opentype");
+    src:
+        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff2") format("woff2"),
+        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -94,7 +98,7 @@ body {
 
 
 #main-text {
-    padding: 16rem 2rem;
+    padding: 20rem 2rem;
     font-size: 6rem;
     line-height: 0.8;
 }

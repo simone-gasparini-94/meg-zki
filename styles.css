@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+
+
+body {
+    overscroll-behavior: none;
+    height: 200vh;
+    background: linear-gradient(to bottom, #E2E2E2, #d8ff7d);
+    line-height: 1.5;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+#navbar-left {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+#star {
+    width: 50px;
+    height: auto;
+    transform: rotate(22deg);
+}
+
+#main-text {
+    padding: 20px 20px;
+    font-size: 4rem;
+    line-height: 0.8;
+}

@@ -1,10 +1,32 @@
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("assets/fonts/NeueMontreal/NeueMontreal-Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    src: url("assets/fonts/NeueMontreal/NeueMontreal-Medium.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Tiempos Headline";
+    src: url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.otf");
+    font-weight: 300;
+    font-style: itali;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
 * {
     margin: 0;
 }
-
 
 body {
     overscroll-behavior: none;
@@ -17,8 +39,8 @@ body {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    gap: 32px;
-    padding: 32px 32px;
+    gap: 2rem;
+    padding: 2rem 2rem;
     z-index: 1000;
 }
 
@@ -31,21 +53,22 @@ body {
 }
 
 #star {
-    
+    width: 2.4rem;
+    height: auto;
 }
 
 
 #main-text {
-    padding: 240px 0;
+    padding: 16rem 2rem;
     font-size: 6rem;
     line-height: 0.8;
 }
 
 #three-column-container {
-    padding: 120px 0;
+    padding: 8rem 2rem;
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 2rem;
 }
 
 .column {
@@ -53,5 +76,5 @@ body {
 }
 
 #copyright {
-    padding: 20px 0;
+    padding: 2rem 2rem;
 }

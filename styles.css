@@ -57,7 +57,7 @@
 body {
     overscroll-behavior: none;
     background: linear-gradient(to bottom, #E2E2E2 500px, #DAFF83 800px, #DAFF83 100%);
-    line-height: 1.5;
+    line-height: 1.4;
     font-family: "Neue Montreal", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
@@ -65,6 +65,8 @@ body {
 
 a {
     color: black;
+    text-underline-offset: 4.5px;
+    line-height: 1.7;
 }
 
 #navbar {
@@ -113,7 +115,9 @@ a {
 
 
 #main-text {
-    padding: 20.5rem 2rem;
+    padding: 0 2rem;
+    margin-top: 20rem;
+    margin-bottom: 16rem;
     font-size: clamp(0.5rem, 6vw + 0.5rem, 6.3rem);
     line-height: 0.88;
     max-width: 100%;
@@ -129,7 +133,8 @@ a {
 }
 
 #three-column-container {
-    padding: 8rem 2rem;
+    margin-bottom: 6rem;
+    padding: 0 2rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
@@ -146,6 +151,10 @@ a {
 
 #column1 {
     grid-column: 1 / span 3;
+}
+
+#column1 p:not(:last-child) {
+    margin-bottom: 2rem;
 }
 
 #column2 {

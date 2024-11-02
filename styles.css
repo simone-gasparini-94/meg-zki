@@ -61,12 +61,23 @@ body {
     font-family: "Neue Montreal", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     color: black;
     text-underline-offset: 4.5px;
     line-height: 1.7;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: hsl(0, 0%, 0% , 70%);
 }
 
 #navbar {
@@ -113,7 +124,6 @@ a {
     transition: transform 0.2s;
 }
 
-
 #main-text {
     padding: 0 2rem;
     margin-top: 20rem;
@@ -128,6 +138,7 @@ a {
 .indented-paragraph {
     width: 100%;
 }
+
 .indented-paragraph {
     text-indent: 8rem;
 }
@@ -159,6 +170,10 @@ a {
 
 #column2 {
     grid-column: 6 / span 3;
+}
+
+#arrow {
+    filter: grayscale(100%) brightness(0%) invert(0%);
 }
 
 #column3 {

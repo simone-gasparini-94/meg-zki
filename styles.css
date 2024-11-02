@@ -82,25 +82,43 @@ body {
 }
 
 #role {
-    font-size: 1.1rem;
-    color: #888888
+    font-size: 1.2rem;
+    color: #888888;
+}
+
+#clock-container {
+    font-size: 1.2rem;
+    flex: 1;
+    font-style: normal;
+    display: flex;
+    gap: 1rem;
 }
 
 #time-display {
-    flex: 1;
-    font-style: normal;
+    width: 4rem;
 }
 
 #star {
     width: 2.4rem;
     height: auto;
+    transition: transform 0.2s;
 }
 
 
 #main-text {
-    padding: 20rem 2rem;
-    font-size: 6rem;
-    line-height: 0.8;
+    padding: 20.5rem 2rem;
+    font-size: clamp(0.5rem, 6vw + 0.5rem, 6.3rem);
+    line-height: 0.88;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.not-indented-paragraph,
+.indented-paragraph {
+    width: 100%;
+}
+.indented-paragraph {
+    text-indent: 8rem;
 }
 
 #three-column-container {

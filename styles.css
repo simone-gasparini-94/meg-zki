@@ -50,6 +50,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+
 * {
     margin: 0;
 }
@@ -64,6 +65,21 @@ body {
     color: hsl(0, 0%, 0%);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color:hsl(0, 0%, 0%);
+    text-underline-offset: 4.5px;
+    text-decoration-thickness: 1.5px;
+    line-height: 1.7;
+}
+
+a:visited {
+    color:hsl(0, 0%, 0%);
+}
+
+.link-container:hover {
+    opacity: 0.5;
 }
 
 #navbar {
@@ -156,21 +172,6 @@ body {
 
 #column2 {
     grid-column: 6 / span 3;
-}
-
-.link-container a {
-    color:hsl(0, 0%, 0%);
-    text-underline-offset: 4.5px;
-    text-decoration-thickness: 1.5px;
-    line-height: 1.7;
-}
-
-.link-container a:visited {
-    color:hsl(0, 0%, 0%);
-}
-
-.link-container:hover {
-    opacity: 0.5;
 }
 
 #column3 {

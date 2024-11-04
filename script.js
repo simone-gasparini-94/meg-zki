@@ -17,3 +17,11 @@ function rotateStar() {
 }
 
 window.addEventListener("scroll", rotateStar);
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        const mainText = document.querySelector(".main-text");
+        mainText.style.opacity = 1;
+        mainText.style.transform = "translateY(0)";
+    }, 400);
+});

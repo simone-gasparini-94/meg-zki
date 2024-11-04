@@ -95,20 +95,20 @@ a:visited {
     font-style: italic;
 }
 
-#name-container {
+.name-container {
     flex: 0 0 25%;
 }
 
-#name {
+.name {
     font-size: 1.3rem;
 }
 
-#role {
+.role {
     font-size: 1.2rem;
     opacity: 0.4;
 }
 
-#clock-container {
+.clock-container {
     font-size: 1.2rem;
     flex: 1;
     font-style: normal;
@@ -116,20 +116,20 @@ a:visited {
     gap: 1rem;
 }
 
-#time-display {
+.time-display {
     width: 4rem;
 }
 
-#star {
+.star {
     width: 2.4rem;
     height: auto;
     transition: transform 0.2s;
 }
 
-#main-text {
+.main-text {
     padding: 0 2rem;
     margin-top: 20rem;
-    margin-bottom: 16rem;
+    margin-bottom: 14rem;
     font-size: clamp(0.5rem, 6vw + 0.5rem, 6.3rem);
     line-height: 0.88;
     max-width: 100%;
@@ -145,7 +145,7 @@ a:visited {
     text-indent: 8rem;
 }
 
-#three-column-container {
+.three-column-container {
     margin-bottom: 6rem;
     padding: 0 2rem;
     display: grid;

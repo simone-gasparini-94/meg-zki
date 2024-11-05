@@ -12,7 +12,7 @@ const star = document.querySelector(".star");
 
 function rotateStar() {
     const scrollPosition = window.scrollY;
-    const rotationDegrees =  scrollPosition * 0.1;
+    const rotationDegrees =  scrollPosition * 0.2;
     star.style.transform = `rotate(${rotationDegrees}deg)`;
 }
 

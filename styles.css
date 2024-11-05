@@ -77,12 +77,17 @@ a {
     line-height: 1.7;
 }
 
-.link-container a:visited {
+a:visited {
     color:hsl(0, 0%, 0%);
 }
 
+.hover-opacity:hover,
 .link-container:hover {
     opacity: 0.5;
+}
+
+.low-opacity {
+    opacity: 0.4;
 }
 
 #navbar {
@@ -202,5 +207,6 @@ a {
 
 #copyright {
     padding: 2rem 2rem;
-    font-size: 0.8rem
+    font-size: 0.8rem;
+    opacity: 0.5;
 }

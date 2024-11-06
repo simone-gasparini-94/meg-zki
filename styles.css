@@ -48,6 +48,7 @@
 }
 
 body {
+    overflow-x: hidden;
     overscroll-behavior: none;
     background: linear-gradient(to bottom, #E2E2E2 500px, #DAFF83 800px, #DAFF83 100%);
     line-height: 1.4;
@@ -105,7 +106,8 @@ a:visited {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    text-align: flex-start;
+    gap: min(6rem, 10vw);
     padding: 2rem 2rem;
     z-index: 1000;
     font-family: "Tiempos Headline", sans-serif;
@@ -113,12 +115,9 @@ a:visited {
     font-style: italic;
 }
 
-.name-container {
-    flex: 0 0 25%;
-}
 
 .name {
-    font-size: 1.3rem;
+    font-size: min(1.3rem, 2.77vw);
     color:hsl(0, 0%, 0%);
     text-decoration: none;
 }
@@ -128,12 +127,12 @@ a:visited {
 }
 
 .role {
-    font-size: 1.2rem;
+    font-size: min(1.2rem, 2.5vw);
     opacity: 0.4;
 }
 
 .clock-container {
-    font-size: 1.2rem;
+    font-size: min(1.2rem, 2.5vw);
     flex: 1;
     font-style: normal;
     display: flex;
@@ -141,11 +140,11 @@ a:visited {
 }
 
 .time-display {
-    width: 4rem;
+    width: min(4rem, 8vw);
 }
 
 .star {
-    width: 2.4rem;
+    width: min(2.2rem, 3vw);
     height: auto;
     
 }
@@ -163,8 +162,21 @@ a:visited {
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+@media (max-width: 1100px) {
+    .main-text {
+        font-size: clamp(1.8rem, 5.4vw, 8rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-text {
+        font-size: clamp(1.6rem, 5vw, 8rem);
+    }
+}
+
+
 .indented-paragraph {
-    text-indent: 8rem;
+    text-indent: 10%;
 }
 
 .three-column-container {

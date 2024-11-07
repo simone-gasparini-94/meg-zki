@@ -8,6 +8,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
+
 const star = document.querySelector(".star");
 
 function rotateStar() {
@@ -18,6 +19,7 @@ function rotateStar() {
 
 window.addEventListener("scroll", rotateStar);
 
+
 window.addEventListener("load", () => {
     setTimeout(() => {
         const mainText = document.querySelector(".main-text");
@@ -25,3 +27,10 @@ window.addEventListener("load", () => {
         mainText.style.transform = "translateY(0)";
     }, 400);
 });
+
+
+const toggle = () => {
+    document.documentElement.classList.toggle("dark-mode");
+};
+
+document.querySelector(".toggle-button").addEventListener("click", toggle);

@@ -40,12 +40,14 @@
     --background: linear-gradient(to bottom, #E2E2E2 500px, #DAFF83 800px, #DAFF83 100%);
     --text: #0A0A0A;
     --selection: #DAFF83;
+    --filter: filter: invert(0%) sepia(88%) saturate(22%) hue-rotate(224deg) brightness(103%) contrast(92%);
 }
 
-:root.dark {
+:root.dark-mode {
     --background: linear-gradient(to bottom, #1d1d1d 500px, #25007c 800px, #25007c 100%);
     --text: #f5f5f5;
     --selection: #25007c;
+    --filter: filter: invert(99%) sepia(96%) saturate(23%) hue-rotate(154deg) brightness(105%) contrast(92%);
 }
 
 *, *::before, *::after {
@@ -128,7 +130,8 @@ a:visited {
     font-style: italic;
 }
 
-.left-content-container {
+.left-content-container,
+.right-content-container {
     display: flex;
     gap: 10vw;
     align-items: flex-start;
@@ -167,6 +170,19 @@ a:visited {
     width: 4rem;
 }
 
+.toggle-container {
+    padding: 4px;
+}
+
+.toggle-button {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: none;
+    color: var(--text);
+    border: 1.5px solid var(--text);
+}
+
 .star-container {
     padding: 4px;
 }
@@ -174,7 +190,6 @@ a:visited {
 .star {
     width: 2.2rem;
     height: auto;
-    
 }
 
 .main-text {

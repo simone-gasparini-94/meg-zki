@@ -35,8 +35,17 @@
     font-style: normal;
 }
 
+
 :root {
-    --off-black: #0A0A0A;
+    --background: linear-gradient(to bottom, #E2E2E2 500px, #DAFF83 800px, #DAFF83 100%);
+    --text: #0A0A0A;
+    --selection: #DAFF83;
+}
+
+:root.dark {
+    --background: linear-gradient(to bottom, #1d1d1d 500px, #25007c 800px, #25007c 100%);
+    --text: #f5f5f5;
+    --selection: #25007c;
 }
 
 *, *::before, *::after {
@@ -49,30 +58,30 @@
 }
 
 ::selection {
-    background-color: #DAFF83;
+    background-color: var(--selection);
 }
 
 body {
     overflow-x: hidden;
     overscroll-behavior: none;
-    background: linear-gradient(to bottom, #E2E2E2 500px, #DAFF83 800px, #DAFF83 100%);
+    background: var(--background);
     line-height: 1.4;
     font-family: "Neue Montreal", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
-    color: var(--off-black);
+    color: var(--text);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: var(--off-black);
+    color: var(--text);
     text-underline-offset: 4.5px;
     text-decoration-thickness: 1.5px; 
 }
 
 a:visited {
-    color: var(--off-black);
+    color: var(--text);
 }
 
 .link-hover-opacity:hover,

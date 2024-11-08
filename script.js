@@ -28,6 +28,9 @@ window.addEventListener("load", () => {
     }, 400);
 });
 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.add("dark-mode");
+}
 
 const toggle = () => {
     document.documentElement.classList.toggle("dark-mode");

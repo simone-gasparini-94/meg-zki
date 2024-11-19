@@ -205,20 +205,6 @@ a:visited {
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-@media (max-width: 1250px) {
-    .main-text {
-        font-size: 2.7vw;
-        line-height: 0.94;
-    }
-}
-
-@media (max-width: 700px) {
-    .main-text {
-        font-size: 2.6vw;
-        line-height: 1;
-    }
-}
-
 .indented-paragraph {
     text-indent: 10%;
 }
@@ -272,4 +258,18 @@ a:visited {
     padding: 2rem 2rem;
     font-size: 0.8rem;
     opacity: 0.5;
+}
+
+@media (max-width: 1250px) {
+    .main-text {
+        font-size: 2.7vw;
+        line-height: 0.94;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-text {
+        font-size: 2.6vw;
+        line-height: 1;
+    }
 }

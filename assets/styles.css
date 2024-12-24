@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Neue Montreal";
     src: 
-        url("assets/fonts/NeueMontreal/NeueMontreal-Regular.woff2") format("woff2"),
-        url("assets/fonts/NeueMontreal/NeueMontreal-Regular.woff") format("woff");
+        url("./fonts/NeueMontreal/NeueMontreal-Regular.woff2") format("woff2"),
+        url("./fonts/NeueMontreal/NeueMontreal-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: "Neue Montreal";
     src: 
-        url("assets/fonts/NeueMontreal/NeueMontreal-Medium.woff2") format("woff2"),
-        url("assets/fonts/NeueMontreal/NeueMontreal-Medium.woff") format("woff");
+        url("./fonts/NeueMontreal/NeueMontreal-Medium.woff2") format("woff2"),
+        url("./fonts/NeueMontreal/NeueMontreal-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -20,8 +20,8 @@
 @font-face {
     font-family: "Tiempos Headline";
     src: 
-        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff2") format("woff2"),
-        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff") format("woff");
+        url("./fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff2") format("woff2"),
+        url("./fonts/TiemposHeadline/Tiempos\ HeadlineTest-LightItalic.woff") format("woff");
     font-weight: 300;
     font-style: italic;
 }
@@ -29,8 +29,8 @@
 @font-face {
     font-family: "Tiempos Headline";
     src:
-        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff2") format("woff2"),
-        url("assets/fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff") format("woff");
+        url("./fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff2") format("woff2"),
+        url("./fonts/TiemposHeadline/Tiempos\ HeadlineTest-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }

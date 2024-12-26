@@ -271,7 +271,3 @@ a:visited {
         font-size: 2.7vw;
     }
 }
-
-.column > * {
-    outline: 1px solid red;
-}

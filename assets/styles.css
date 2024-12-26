@@ -204,15 +204,15 @@ a:visited {
 }
 
 .indented-paragraph {
-    text-indent: 10%;
+    text-indent: 8vw;
 }
 
 .three-column-container {
     margin-bottom: 6rem;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(12, minmax(65px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(12, minmax(max-content, 1fr));
+    /* gap: 0.6rem; */
 }
 
 .column-title {
@@ -223,6 +223,11 @@ a:visited {
     margin-bottom: 1.6rem;
     margin-top: 3.2rem;
 }
+
+.column.first > .column-title {
+    margin-bottom: 1.7rem;
+}
+
 .link-container {
     white-space: nowrap;
 }
@@ -265,4 +270,8 @@ a:visited {
     .main-text {
         font-size: 2.7vw;
     }
+}
+
+.column > * {
+    outline: 1px solid red;
 }

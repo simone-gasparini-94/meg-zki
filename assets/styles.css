@@ -217,7 +217,7 @@ a:visited {
     margin-bottom: 6rem;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(12, minmax(70px, 1fr));
+    grid-template-columns: repeat(12, minmax(65px, 1fr));
     gap: 1rem;
 }
 

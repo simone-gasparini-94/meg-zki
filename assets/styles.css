@@ -165,7 +165,6 @@ a:visited {
     font-style: normal;
     display: flex;
     gap: 0.8vw;
-    height: 100%;
 }
 
 .country {
@@ -173,7 +172,6 @@ a:visited {
 }
 
 .toggle-container {
-    height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -186,10 +184,6 @@ a:visited {
     background: none;
     color: var(--text);
     border: 1.5px solid var(--text);
-}
-
-.star-container {
-    height: 100%;
 }
 
 .star {

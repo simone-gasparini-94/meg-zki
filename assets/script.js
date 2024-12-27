@@ -30,10 +30,23 @@ window.addEventListener("load", () => {
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.documentElement.classList.add("dark-mode");
-}
+};
+
+const toggleButton = document.querySelector(".toggle-button")
 
 const toggle = () => {
     document.documentElement.classList.toggle("dark-mode");
 };
 
-document.querySelector(".toggle-button").addEventListener("click", toggle);
+toggleButton.addEventListener("click", toggle);
+
+const textHover = document.querySelector(".underlined");
+const meg = document.querySelector(".meg");
+
+textHover.addEventListener("mouseenter", () => {
+    meg.style.display = "inline";
+});
+
+textHover.addEventListener("mouseleave", () => {
+    meg.style.display = "none";
+});

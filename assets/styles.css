@@ -228,6 +228,21 @@ a:visited {
     margin-bottom: 1.7rem;
 }
 
+.column-content {
+    position: relative;
+}
+
+.meg {
+    width: 20vw;
+    height: auto;
+
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -70%;
+    z-index: 2;
+}
+
 .link-container {
     white-space: nowrap;
 }

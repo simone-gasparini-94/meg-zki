@@ -35,12 +35,16 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 const lightMode = document.querySelector(".light");
 const darkMode = document.querySelector(".dark");
 
-const toggle = () => {
-    document.documentElement.classList.toggle("dark-mode");
+const addDarkMode = () => {
+    document.documentElement.classList.add("dark-mode");
 };
 
-lightMode.addEventListener("click", toggle);
-darkMode.addEventListener("click", toggle);
+const removeDarkMode = () => {
+    document.documentElement.classList.remove("dark-mode");
+}
+
+lightMode.addEventListener("click", removeDarkMode);
+darkMode.addEventListener("click", addDarkMode);
 
 const textHover = document.querySelector(".underlined");
 const meg = document.querySelector(".meg");

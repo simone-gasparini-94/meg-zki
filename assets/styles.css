@@ -16,7 +16,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: "Tiempos Headline";
     src: 
@@ -34,7 +33,6 @@
     font-weight: 300;
     font-style: normal;
 }
-
 
 :root {
     --background: linear-gradient(to bottom, #E2E2E2 500px, #CEFF5C 800px, #CEFF5C 100%);
@@ -85,6 +83,12 @@ a {
     text-decoration-thickness: 1.5px; 
 }
 
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+}
+
 a:visited {
     color: var(--text);
 }
@@ -130,11 +134,9 @@ a:visited {
     z-index: 1000;
     font-family: "Tiempos Headline", sans-serif;
     font-weight: 300;
-    font-style: italic;
 }
 
-.left-content-container,
-.right-content-container {
+.left-content-container {
     display: flex;
     gap: clamp(2rem, 14vw, 16rem);
     align-items: flex-start;
@@ -159,6 +161,7 @@ a:visited {
 .role {
     opacity: 0.4;
     margin: 0;
+    font-style: italic;
 }
 
 .clock-container {
@@ -167,26 +170,15 @@ a:visited {
     font-style: normal;
     display: flex;
     justify-content: space-between;
-    gap: 8px;
 }
 
 .country {
     white-space: nowrap;
 }
 
-.toggle-container {
+.theme-mode {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.toggle-button {
-    width: clamp(1.2rem, 2.6vw, 2.2rem);
-    height: clamp(1.2rem, 2.6vw, 2.2rem);
-    border-radius: 50%;
-    background: none;
-    color: var(--text);
-    border: 1.5px solid var(--text);
+    gap: 8px;
 }
 
 .star {

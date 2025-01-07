@@ -32,13 +32,15 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
     document.documentElement.classList.add("dark-mode");
 };
 
-const toggleButton = document.querySelector(".toggle-button")
+const lightMode = document.querySelector(".light");
+const darkMode = document.querySelector(".dark");
 
 const toggle = () => {
     document.documentElement.classList.toggle("dark-mode");
 };
 
-toggleButton.addEventListener("click", toggle);
+lightMode.addEventListener("click", toggle);
+darkMode.addEventListener("click", toggle);
 
 const textHover = document.querySelector(".underlined");
 const meg = document.querySelector(".meg");

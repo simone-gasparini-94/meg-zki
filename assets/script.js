@@ -30,6 +30,7 @@ window.addEventListener("load", () => {
 
 
 const lightModeButton = document.querySelector(".light");
+lightModeButton.disabled = true;
 const darkModeButton = document.querySelector(".dark");
 
 const addDarkMode = () => {

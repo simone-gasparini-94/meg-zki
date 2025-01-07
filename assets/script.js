@@ -28,23 +28,30 @@ window.addEventListener("load", () => {
     }, 400);
 });
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.classList.add("dark-mode");
-};
 
-const lightMode = document.querySelector(".light");
-const darkMode = document.querySelector(".dark");
+const lightModeButton = document.querySelector(".light");
+const darkModeButton = document.querySelector(".dark");
 
 const addDarkMode = () => {
     document.documentElement.classList.add("dark-mode");
+    darkModeButton.disabled = true;
+    lightModeButton.disabled = false;
 };
 
 const removeDarkMode = () => {
     document.documentElement.classList.remove("dark-mode");
+    lightModeButton.disabled = true;
+    darkModeButton.disabled = false;
 }
 
-lightMode.addEventListener("click", removeDarkMode);
-darkMode.addEventListener("click", addDarkMode);
+lightModeButton.addEventListener("click", removeDarkMode);
+darkModeButton.addEventListener("click", addDarkMode);
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+   addDarkMode();
+} else {
+    removeDarkMode();
+}
 
 const textHover = document.querySelector(".underlined");
 const meg = document.querySelector(".meg");
